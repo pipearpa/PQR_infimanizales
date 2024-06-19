@@ -1,6 +1,4 @@
 <x-guest-layout>
-
-
     <div class="containerRegistro">
         <section>
             <h2><b>INGRESA UN NUEVO USUARIO</b></h2>
@@ -49,6 +47,14 @@
                                 name="password_confirmation" required autocomplete="new-password" />
 
                 <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+            </div>
+
+            <div class="mt-4" >
+                <label for="user_type">Tipo de Usuario</label>
+                <select name="user_type" id="user_type" class="form-control" required style="border-radius: 20px">
+                    <option value="admin">Admin</option>
+                    <option value="superuser">Superusuario</option>
+                </select>
             </div>
 
             <div class="flex items-center justify-end mt-4">

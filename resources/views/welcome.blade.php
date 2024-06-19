@@ -10,184 +10,6 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-
-        <!-- Styles -->
-        <style>
-            .logo-pequeno {
-                position: relative;
-                max-width: 500px;
-                max-height: 100px;
-                bottom: 20px;
-                filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
-            }
-            .logo {
-                max-width: 100px; /* Ajusta el tamaño máximo del logo según sea necesario */
-                height: auto; /* Mantiene la proporción de la imagen */
-                filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.5));
-            }
-
-            .nuevaPqr ,.consultarPqr {
-                font-weight: 700;
-                background-color: #39bb36;
-                color: #fff; /* White text color */
-                border: none; /* Remove default border */
-                padding: 15px 30px; /* Adjust padding */
-                border-radius: 5px; /* Rounded corners */
-                cursor: pointer; /* Indicate clickable area */
-                font-size: 18px; /* Adjust font size */
-                text-transform: uppercase; /* Make text uppercase */
-                transition: background-color 0.3s ease; /* Smooth hover effect */
-                }
-
-            .nuevaPqr:hover {
-                background-color: #33D7A7; /* Darker blue on hover */
-                }
-            .consultarPqr:hover {
-                background-color: #33D7A7; /* Darker blue on hover */
-                }
-
-            .contenedor-main {
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .parrafo {
-                padding: 15px;
-                width: 45%; /* Ajusta el ancho según sea necesario */
-                float: right; /* Para ubicar a la derecha */
-                margin:0 auto;
-                border-radius:20px;
-            }
-
-            .Botones {
-                padding: 15px;
-                width: 45%; /* Ajusta el ancho según sea necesario */
-                float: left; /* Para ubicar a la izquierda */
-                text-align: center; /* Centra el texto */
-                margin:0 auto;
-                border-radius:20px;
-            }
-                        /* /DECORACIÓN FOOTER/ */
-            .custom-shape-divider-bottom-1712869018 {
-                margin:0;
-                padding: 0;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                z-index: -1; /* Para que esté detrás del contenido */
-                overflow: hidden;
-                transform: rotate(180deg);
-            }
-
-            .custom-shape-divider-bottom-1712869018 svg {
-                position: relative;
-                display: block;
-                width: calc(100% + 1.3px);
-                height: 154px;
-            }
-
-            .custom-shape-divider-bottom-1712869018 .shape-fill {
-                fill: #265073;
-            }
-
-            /* /#D369C1 COLOR POR DEFECTO DE LA DECORACIÓN DE ABAJO/ */
-
-            /* For mobile devices */
-            @media (max-width: 767px) {
-                .custom-shape-divider-bottom-1712869018 svg {
-                    width: calc(100% + 1.3px);
-                    height: 80px;
-                }
-
-                .logo-pequeno {
-                    bottom: 10px;
-                }
-
-                * {
-                    overflow-x: hidden;
-                }
-
-                .navbar {
-                    flex-direction: column;
-                    align-items: flex-start;
-                    background-color: #f3f3f3;
-                }
-
-                .nav-links {
-                    margin-top: 10px; /* Espacio entre el logo y los enlaces */
-                }
-
-                .nav-link {
-                    margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
-                    margin-top: 10px; /* Espacio entre los enlaces */
-                }
-
-                .contenedor-main {
-
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    gap: 20px;
-                }
-
-                .Botones {
-                    width: 85%;
-                }
-
-                .Botones h3 {
-                    overflow: hidden;
-                }
-
-                .parrafo {
-                    width: 85%;
-                }
-
-                .parrafo h2 {
-                    overflow: hidden;
-                }
-            }
-
-            .footer-diseño {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: flex-end;
-                align-content: flex-end;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .navbar {
-                display: flex;
-                justify-content: space-between;
-                align-items: stretch;
-                padding: 10px 20px; /* Ajusta el espaciado según sea necesario */
-                background-color: #f3f3f3; /* Color de fondo de la navbar */
-                box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
-                flex-wrap: wrap;
-                flex-direction: row;
-            }
-
-            .nav-link {
-                margin-left: 20px; /* Espaciado entre los enlaces */
-                padding: 10px 15px; /* Espaciado interno de los enlaces */
-                border-radius: 5px; /* Bordes redondeados */
-                text-decoration: none; /* Sin subrayado */
-                color: #333; /* Color del texto */
-                transition: cubic-bezier(0.3s ease) ; /* Transición suave */
-                font-weight: bold;
-            }
-
-            .logo-container {
-                flex-shrink: 0; /* Evita que el logo se encoja */
-            }
-
-            .nav-link:hover {
-                background-color: #e9ecef; /* Color de fondo al pasar el mouse */
-            }
-
-            /* Estilos adicionales según sea necesario */
-        </style>
-
     </head>
     <body class="font-sans antialiased dark:bg-black dark:text-white/50">
         <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
@@ -218,83 +40,6 @@
                             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
                             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-                            <style>
-                                .nav-links {
-                                    display: flex;
-                                    align-items: center;
-                                    gap: 20px;
-                                    }
-
-                                    .nav-link {
-                                    font-size: 18px;
-                                    text-decoration: none;
-                                    color: #333;
-                                    }
-
-                                    /* Styles for the drop-down menu */
-                                    .dropdown {
-                                    position: relative;
-                                    }
-
-                                    .dropdown-menu {
-                                    display: none;
-                                    position: absolute;
-                                    background-color: #fff;
-                                    min-width: 160px;
-                                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-                                    z-index: 1;
-                                    border-radius: 5px;
-                                    right: 0; /* Align the drop-down to the right */
-                                    top: 100%;
-                                    }
-
-                                    .dropdown-item {
-                                    padding: 10px 20px;
-                                    text-decoration: none;
-                                    display: block;
-                                    color: #333;
-                                    }
-
-                                    .dropdown-item:hover {
-                                    background-color: #f5f5f5;
-                                    }
-
-                                    .dropdown.open .dropdown-menu {
-                                    display: block;
-                                    }
-
-                                    /* Responsive styles for smaller screens */
-                                    @media (max-width: 768px) {
-                                        .dropdown {
-                                            display: block; /* Show the button on small screens */
-                                        }
-
-                                        .dropdown-menu {
-                                            position:static;
-                                            width: 100%; /* Ocupa todo el ancho disponible */
-                                            max-width: 100vw; /* Evita desbordamiento horizontal */
-                                            top: 50px; /* Ajusta la distancia desde la parte superior */
-                                            left: 0;
-                                            right: 0;
-                                            border-radius: 5px; /* Quita el borde redondeado */
-                                            z-index: 1;
-                                        }
-
-                                        .footer-diseño {
-                                            align-content: center;
-                                        }
-
-                                    }
-
-                            </style>
-                            <script>
-                                // JavaScript para activar el botón desplegable en pantallas pequeñas
-                                $(document).ready(function() {
-                                    $('#dropdownButton').on('click', function() {
-                                        $('.dropdown-menu').toggle();
-                                    });
-                                });
-                            </script>
                         </nav>
                     @endif
                     </header>
@@ -354,3 +99,262 @@
                             <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
                         </svg>
                     </div>
+
+
+{{-- MARK:ESTILOS --}}
+
+
+<style>
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        }
+
+        .nav-link {
+        font-size: 18px;
+        text-decoration: none;
+        color: #333;
+        }
+
+        /* Styles for the drop-down menu */
+        .dropdown {
+        position: relative;
+        }
+
+        .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 5px;
+        right: 0; /* Align the drop-down to the right */
+        top: 100%;
+        }
+
+        .dropdown-item {
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+        color: #333;
+        }
+
+        .dropdown-item:hover {
+        background-color: #f5f5f5;
+        }
+
+        .dropdown.open .dropdown-menu {
+        display: block;
+        }
+
+        /* Responsive styles for smaller screens */
+        @media (max-width: 768px) {
+            .dropdown {
+                display: block; /* Show the button on small screens */
+            }
+
+            .dropdown-menu {
+                position:static;
+                width: 100%; /* Ocupa todo el ancho disponible */
+                max-width: 100vw; /* Evita desbordamiento horizontal */
+                top: 50px; /* Ajusta la distancia desde la parte superior */
+                left: 0;
+                right: 0;
+                border-radius: 5px; /* Quita el borde redondeado */
+                z-index: 1;
+            }
+
+            .footer-diseño {
+                align-content: center;
+            }
+
+        }
+
+        .logo-pequeno {
+        position: relative;
+        max-width: 500px;
+        max-height: 100px;
+        bottom: 20px;
+        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    }
+    .logo {
+        max-width: 100px; /* Ajusta el tamaño máximo del logo según sea necesario */
+        height: auto; /* Mantiene la proporción de la imagen */
+        filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.5));
+    }
+
+    .nuevaPqr ,.consultarPqr {
+        font-weight: 700;
+        background-color: #39bb36;
+        color: #fff; /* White text color */
+        border: none; /* Remove default border */
+        padding: 15px 30px; /* Adjust padding */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Indicate clickable area */
+        font-size: 18px; /* Adjust font size */
+        text-transform: uppercase; /* Make text uppercase */
+        transition: background-color 0.3s ease; /* Smooth hover effect */
+        }
+
+    .nuevaPqr:hover {
+        background-color: #33D7A7; /* Darker blue on hover */
+        }
+    .consultarPqr:hover {
+        background-color: #33D7A7; /* Darker blue on hover */
+        }
+
+    .contenedor-main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .parrafo {
+        padding: 15px;
+        width: 45%; /* Ajusta el ancho según sea necesario */
+        float: right; /* Para ubicar a la derecha */
+        margin:0 auto;
+        border-radius:20px;
+    }
+
+    .Botones {
+        padding: 15px;
+        width: 45%; /* Ajusta el ancho según sea necesario */
+        float: left; /* Para ubicar a la izquierda */
+        text-align: center; /* Centra el texto */
+        margin:0 auto;
+        border-radius:20px;
+    }
+                /* /DECORACIÓN FOOTER/ */
+    .custom-shape-divider-bottom-1712869018 {
+        margin:0;
+        padding: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1; /* Para que esté detrás del contenido */
+        overflow: hidden;
+        transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1712869018 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 154px;
+    }
+
+    .custom-shape-divider-bottom-1712869018 .shape-fill {
+        fill: #265073;
+    }
+
+    /* /#D369C1 COLOR POR DEFECTO DE LA DECORACIÓN DE ABAJO/ */
+
+    /* For mobile devices */
+    @media (max-width: 767px) {
+        .custom-shape-divider-bottom-1712869018 svg {
+            width: calc(100% + 1.3px);
+            height: 80px;
+        }
+
+        .logo-pequeno {
+            bottom: 10px;
+        }
+
+        * {
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: #f3f3f3;
+        }
+
+        .nav-links {
+            margin-top: 10px; /* Espacio entre el logo y los enlaces */
+        }
+
+        .nav-link {
+            margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
+            margin-top: 10px; /* Espacio entre los enlaces */
+        }
+
+        .contenedor-main {
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .Botones {
+            width: 85%;
+        }
+
+        .Botones h3 {
+            overflow: hidden;
+        }
+
+        .parrafo {
+            width: 85%;
+        }
+
+        .parrafo h2 {
+            overflow: hidden;
+        }
+    }
+
+    .footer-diseño {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        padding: 10px 20px; /* Ajusta el espaciado según sea necesario */
+        background-color: #f3f3f3; /* Color de fondo de la navbar */
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .nav-link {
+        margin-left: 20px; /* Espaciado entre los enlaces */
+        padding: 10px 15px; /* Espaciado interno de los enlaces */
+        border-radius: 5px; /* Bordes redondeados */
+        text-decoration: none; /* Sin subrayado */
+        color: #333; /* Color del texto */
+        transition: cubic-bezier(0.3s ease) ; /* Transición suave */
+        font-weight: bold;
+    }
+
+    .logo-container {
+        flex-shrink: 0; /* Evita que el logo se encoja */
+    }
+
+    .nav-link:hover {
+        background-color: #e9ecef; /* Color de fondo al pasar el mouse */
+    }
+
+</style>
+
+
+{{-- MARK:SCRIPTS --}}
+
+
+<script>
+    // JavaScript para activar el botón desplegable en pantallas pequeñas
+    $(document).ready(function() {
+        $('#dropdownButton').on('click', function() {
+            $('.dropdown-menu').toggle();
+        });
+    });
+</script>

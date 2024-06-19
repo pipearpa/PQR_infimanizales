@@ -34,6 +34,7 @@ class RegisteredUserController extends Controller
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
             'numero_documento' => ['required', 'string'],
+            'user_type' => ['required', 'string', 'in:user,admin,superuser'],
         ]);
 
         $user = User::create([
@@ -41,11 +42,12 @@ class RegisteredUserController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
             'numero_documento' => $request -> numero_documento,
+            'user_type' => $request['user_type'],
         ]);
 
         event(new Registered($user));
 
-        Auth::login($user);
+        //Auth::login($user);
 
         toastr()->success('Usuario registrado con exito');
         return redirect(route('dashboard', absolute: false));

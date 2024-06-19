@@ -7,10 +7,29 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Spatie\Permission\Traits\HasRoles;
 
-class User extends Authenticatable 
+class User extends Authenticatable
 {
-    use HasFactory, Notifiable;
+    use HasFactory, Notifiable, HasRoles;
+
+    /**
+     * Check if the user is an admin.
+     *
+     *
+     */
+
+    public function isAdmin()
+    {
+        return $this->user_type === 'admin';
+    }
+
+    public function isSuperUser()
+    {
+        return $this->user_type === 'superuser';
+    }
+
+
 
     /**
      * The attributes that are mass assignable.
@@ -22,6 +41,7 @@ class User extends Authenticatable
         'email',
         'password',
         'numero_documento',
+        'user_type',
     ];
 
     /**
@@ -47,10 +67,12 @@ class User extends Authenticatable
         ];
     }
 
-
-    // $user->chirps
-    public function chirps(): HasMany
+    public function toggleActivation(User $user)
     {
-       return $this->hasMany(Chirp::class);    
+        $user->update([
+            'active' => !$user->active, // Cambia el estado de activo a inactivo y viceversa
+        ]);
+
+        return redirect()->route('users.index')->with('success', 'User activation status updated successfully');
     }
 }

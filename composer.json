@@ -10,6 +10,8 @@
         "dompdf/dompdf": "^2.0",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",
+        "rap2hpoutre/fast-excel": "^5.5",
+        "spatie/laravel-permission": "^6.7",
         "twbs/bootstrap-icons": "^1.11",
         "yoeunes/toastr": "^2.3"
     },

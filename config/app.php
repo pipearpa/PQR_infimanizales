@@ -52,7 +52,10 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://localhost/'),
+
+    'baseUrl' => env('APP_URL', 'http://localhost/pqr_infi_mzls/public'),
+
 
     /*
     |--------------------------------------------------------------------------

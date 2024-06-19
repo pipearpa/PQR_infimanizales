@@ -1,0 +1,390 @@
+    /* Definir animación */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Clase para la animación */
+    .fade-in {
+        animation: fadeIn 1s ease-in-out;
+    }
+    /* Definir animación */
+
+    #botonMarcar {
+        width: fit-content;
+        justify-content: flex-end;
+        background-color: lightslategrey;
+        color: ghostwhite;
+        font-weight:600;
+    }
+
+    #botonMarcar:hover {
+        background-color: #042042;
+        color: ghostwhite;
+    }
+
+    #exportarPDF {
+        background-color: lightslategrey;
+        color:ghostwhite;
+    }
+
+    #exportarPDF:hover {
+        background-color: #b10303;
+        color: ghostwhite;
+    }
+
+    #exportarExcel {
+        background-color: lightslategrey;
+        color:ghostwhite;
+    }
+
+    #exportarExcel:hover {
+        background-color: #1aad5c;
+        color: ghostwhite;
+    }
+
+    .acciones {
+        position: relative;
+        width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: auto;
+        margin-top: 8px;
+        gap: 10px;
+    }
+
+    #descargar {
+        position: relative;
+        display: flex;
+        width: fit-content;
+        left: 55%;
+        justify-content: flex-end;
+        background-color: lightslategrey;
+        color: ghostwhite;
+        font-weight:600;
+    }
+
+    #descargar:hover {
+        background-color: #042042;
+        color: ghostwhite;
+    }
+
+    #acomodar1 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    #iconoAgregar {
+        position: relative;
+        left: 23pc;
+        top: 16px;
+        /*         left: 18pc;
+        top: 1pc; */
+    }
+
+    /* Estilos para los nav-tabs */
+    .nav-tabs {
+        border-bottom: 1px solid #04204285;
+        margin-bottom: 1rem;
+    }
+
+    .nav-item a {
+        color: #000;
+        font-weight: 600;
+    }
+
+    .nav-tabs .nav-item {
+        margin-bottom: -0.5px;
+        color: #000;
+    }
+
+    .nav-tabs .nav-link {
+        border: 1px solid transparent;
+        border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem;
+    }
+
+    .nav-tabs .nav-link.active {
+        background-color: #042042 !important;
+        border-color: #042042 #042042 #042042 #042042;
+        color: ghostwhite !important;
+    }
+
+    .nav-tabs .nav-link:hover {
+        background-color: #0e4180;
+        color: ghostwhite;
+    }
+
+    #paginated-content {
+        display: grid;
+        padding: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin: 0 auto;
+    }
+
+    /* Individual PQR Card */
+    .pqr-card {
+        background-color: #f7f7f7;
+        border-radius: 8px;
+        box-shadow: 0 1px 8px rgba(0, 0, 0.5, 0.3);
+        padding: 20px;
+        max-width: 100%;
+        /* Prevent cards from overflowing container */
+        margin-bottom: 20px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        /* Add spacing between cards */
+    }
+
+    .pqr-id {
+        font-size: 12px;
+        color: #aaa;
+        margin-top: 5px;
+    }
+
+    /* PQR Actions */
+    .pqr-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* Align buttons vertically */
+    }
+
+    .pqr-actions button {
+        padding: 5px 5px;
+        border: 1px solid #ddd;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        background-color: #ffcb00;
+        font-weight:600;
+    }
+
+    .pqr-actions button:hover {
+        background-color: #042042;
+        color: ghostwhite;
+    }
+
+    /* Responsive Adjustments (Optional) */
+    @media screen and (max-width: 768px) {
+        #paginated-content {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        #paginated-content {
+            grid-template-columns: 1fr;
+        }
+
+        #paginated-content {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .pqr-card {
+            flex-direction: initial;
+        }
+
+        #acomodar {
+            position: relative;
+            left: 14px;
+        }
+
+        #exportarPDF {
+            left: 85%;
+        }
+
+        #exportarExcel {
+            left: 45%;
+        }
+
+        #descargar {
+            left: 35%;
+        }
+    }
+
+    .contenido {
+        filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.2));
+        border-radius: 15px;
+        background-color: #d9dadb;
+    }
+
+    /* Estilos adicionales para hacer el diseño más responsivo */
+    @media screen and (max-width: 768px) {
+        .pagination-control {
+            padding: 10px 12px;
+        }
+
+        .pagination-current {
+            margin: 0 5px;
+        }
+
+        #pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            align-content: center;
+            bottom: 0;
+        }
+
+        #items-per-page {
+            position: relative;
+            left: 20px;
+        }
+
+        #iconoAgregar {
+            position: relative;
+            left: 3pc;
+        }
+
+        .nav-tabs {
+            display: flex;
+            width: 335px;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .pagination-control {
+            padding: 4px 8px;
+        }
+
+        .pagination-current {
+            margin: 0 3px;
+        }
+    }
+
+
+    /* Estilo para el modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    /* Contenido del modal */
+    .modal-content {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 100%;
+        overflow: scroll;
+    }
+
+    /* Botón para cerrar el modal */
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 35px;
+        font-weight: bold;
+
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+    .page-link.active {
+        /* background-color: #007bff; */
+        color: #fff;
+    }
+    .page-item.disabled .page-link {
+        cursor: not-allowed;
+        color: #6c757d;
+    }
+
+    /* Estilos para el contenedor del selector */
+    #itemsPerPageSelect {
+        display: inline-block;
+        margin-left: 10px;
+        padding: 5px 10px;
+        font-size: 1rem;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        background-color: #ffffff;
+        color: #495057;
+        cursor: pointer;
+        outline: none;
+        transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    /* Estilos para el label */
+    #itemsPerPageSelect + label {
+        margin-right: 10px;
+        font-size: 1rem;
+        color: #495057;
+    }
+
+    /* Estilos al enfocar el selector */
+    #itemsPerPageSelect:focus {
+        border-color: #80bdff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    /* Estilos para la paginación */
+    .pagination {
+        margin: 0;
+    }
+
+/*     .pagination .page-item .page-link {
+        color: #000000;
+    } */
+
+    .pagination .page-item.disabled .page-link {
+        color: #6c757d;
+        pointer-events: none;
+        background-color: transparent;
+    }
+
+    .pagination .page-item.active .page-link {
+        z-index: 1;
+        color: ghostwhite;
+    }
+
+    .pagination .page-link {
+        position: relative;
+        /* display: block; */
+        padding: 0.5rem 0.75rem;
+        margin-left: -1px;
+        line-height: 1.25;
+        text-decoration: none;
+    }
+
+    .pagination .page-link:hover {
+        z-index: 2;
+        text-decoration: none;
+        background-color: #337ec985;
+        border-color: #dee2e6;
+        color: ghostwhite;
+    }
+
+    .active>.page-link, .page-link.active {
+        z-index: 0;
+        background-color: #042042 !important;
+        color: #fff ;
+    }
